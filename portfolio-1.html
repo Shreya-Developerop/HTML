@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shreyaa | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            color: #333;
+            background: #f9f9f9;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        .section {
+            padding: 60px 0;
+        }
+
+        h1,
+        h2,
+        h3 {
+            margin-bottom: 20px;
+        }
+
+        /* Navbar */
+        .navbar {
+            background: #fff;
+            border-bottom: 1px solid #ddd;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar ul {
+            display: flex;
+            list-style: none;
+        }
+
+        .navbar ul li {
+            margin-left: 20px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        /* Hero */
+        .hero {
+            background: linear-gradient(to right, #4b6cb7, #182848);
+            color: #fff;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h2 span {
+            color: #ffd700;
+        }
+
+        .hero .btn {
+            background: #ffd700;
+            color: #000;
+            padding: 10px 20px;
+            margin-top: 20px;
+            display: inline-block;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        /* About, Contact */
+        .about p,
+        .contact p {
+            max-width: 700px;
+            margin: auto;
+            font-size: 1.1rem;
+            color: #444;
+        }
+
+        /* Skills */
+        .skill-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 20px;
+            list-style: none;
+            padding: 0;
+        }
+
+        .skill-list li {
+            background: #fff;
+            padding: 10px 15px;
+            text-align: center;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            font-weight: bold;
+        }
+
+        /* Projects */
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .project-card {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .project-card h3 {
+            margin-bottom: 10px;
+        }
+
+        .project-card a {
+            color: #3498db;
+        }
+
+        /* Experience */
+        .timeline .job {
+            margin-bottom: 30px;
+        }
+
+        .timeline span {
+            font-style: italic;
+            color: #666;
+        }
+
+        /* Testimonials */
+        .testimonials blockquote {
+            background: #fff;
+            padding: 20px;
+            border-left: 5px solid #3498db;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+
+        .testimonials cite {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        /* Footer */
+        .footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="container">
+            <h1 class="logo">Shreyaa</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h2>Hello, I'm <span>Shreyaa</span></h2>
+            <p>Full-Stack Web Developer | UI/UX Designer | Problem Solver</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>
+                I am a passionate web developer with experience building responsive websites and applications using
+                HTML, CSS.
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="skills section">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul class="skill-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript </li>
+                <li>React</li>
+                <li>Node.js</li>
+                <li></li>
+                <li></li>
+                <li> GitHub</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="projects section">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Project One</h3>
+                    <p>A fully responsive e-commerce site with integrated cart functionality.</p>
+                    <a href="#">View </a>
+                </div>
+                <div class="project-card">
+                    <h3>Project Two</h3>
+                    <p>Task manager web app using React and Firebase authentication.</p>
+                    <a href="#">View </a>
+                </div>
+                <div class="project-card">
+                    <h3>Project Three</h3>
+                    <p>Portfolio website designed and coded using HTML/CSS .</p>
+                    <a href="#">View </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Contact -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>If you're interested in working together or just want to say hi, feel free to reach out!</p>
+            <a href="mailto:your.email@example.com" class="btn">Email Me</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Shreyaa. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Name | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            background: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+            padding: 40px 0;
+        }
+
+        h1,
+        h2,
+        h3 {
+            margin-bottom: 20px;
+        }
+
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #3498db;
+            color: #fff;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background: #2980b9;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: #fff;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+        }
+
+        .hero h1 span {
+            color: #ffd700;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin: 20px 0;
+        }
+
+        /* About Section */
+        .about {
+            background: #fff;
+            text-align: center;
+        }
+
+        .about p {
+            max-width: 600px;
+            margin: auto;
+        }
+
+        /* Projects Section */
+        .projects {
+            background: #f9f9f9;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+        }
+
+        /* Contact Section */
+        .contact {
+            background: #fff;
+            text-align: center;
+        }
+
+        .contact .btn {
+            margin-top: 20px;
+        }
+
+        /* Footer */
+        .footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Responsive Typography */
+        @media (max-width: 600px) {
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header / Hero -->
+    <header class="hero">
+        <div class="container">
+            <h1>Hello, I'm <span>Shreyaa</span></h1>
+            <p>Frontend Developer | UI Designer | Creative Thinker</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>
+                I’m a creative frontend developer with a passion for building beautiful, functional, and accessible
+                websites. I specialize in HTML, CSS, JavaScript, and responsive design.
+            </p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Project One</h3>
+                    <p>A brief description of this awesome project. Built with HTML, CSS & JS.</p>
+                    <a href="#">View Project</a>
+                </div>
+                <div class="card">
+                    <h3>Project Two</h3>
+                    <p>This is another fantastic project that solves real-world problems.</p>
+                    <a href="#">View Project</a>
+                </div>
+                <div class="card">
+                    <h3>Project Three</h3>
+                    <p>An innovative solution made with modern web technologies.</p>
+                    <a href="#">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Want to work together or have a question? Let's talk.</p>
+            <a href="mailto:your.email@example.com" class="btn">Email Me</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Your Name. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
