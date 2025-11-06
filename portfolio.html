@@ -2,198 +2,320 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Your Name | Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Segoe UI', sans-serif;
-            line-height: 1.6;
-            background: #f4f4f4;
-            color: #333;
-        }
-
-        .container {
-            width: 90%;
-            max-width: 1100px;
-            margin: auto;
-            padding: 40px 0;
-        }
-
-        h1,
-        h2,
-        h3 {
-            margin-bottom: 20px;
-        }
-
-        a {
-            color: #3498db;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 10px 20px;
-            background: #3498db;
-            color: #fff;
-            border-radius: 5px;
-            text-decoration: none;
-        }
-
-        .btn:hover {
-            background: #2980b9;
-        }
-
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(to right, #6a11cb, #2575fc);
-            color: #fff;
-            text-align: center;
-            padding: 100px 20px;
-        }
-
-        .hero h1 {
-            font-size: 3rem;
-        }
-
-        .hero h1 span {
-            color: #ffd700;
-        }
-
-        .hero p {
-            font-size: 1.2rem;
-            margin: 20px 0;
-        }
-
-        /* About Section */
-        .about {
-            background: #fff;
-            text-align: center;
-        }
-
-        .about p {
-            max-width: 600px;
-            margin: auto;
-        }
-
-        /* Projects Section */
-        .projects {
-            background: #f9f9f9;
-        }
-
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-        }
-
-        .card {
-            background: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-        }
-
-        .card h3 {
-            margin-bottom: 10px;
-        }
-
-        /* Contact Section */
-        .contact {
-            background: #fff;
-            text-align: center;
-        }
-
-        .contact .btn {
-            margin-top: 20px;
-        }
-
-        /* Footer */
-        .footer {
-            background: #333;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-        }
-
-        /* Responsive Typography */
-        @media (max-width: 600px) {
-            .hero h1 {
-                font-size: 2.2rem;
-            }
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shreyaa | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
 </head>
+<style>
+    /* General Reset */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Poppins', sans-serif;
+        background-color: #fdfcfb;
+        color: #444;
+        overflow-x: hidden;
+    }
+
+    /* Navbar */
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 25px 60px;
+        background: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(10px);
+        position: sticky;
+        top: 0;
+        z-index: 10;
+    }
+
+    .logo {
+        font-size: 1.6rem;
+        font-weight: 600;
+        color: #444;
+        letter-spacing: 1px;
+    }
+
+    .nav-links {
+        display: flex;
+        list-style: none;
+        gap: 25px;
+    }
+
+    .nav-links a {
+        text-decoration: none;
+        color: #666;
+        font-weight: 500;
+        transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+        color: #a084ca;
+    }
+
+    /* Hero Section */
+    .hero {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 85vh;
+        background: linear-gradient(135deg, #f3e8ff, #fef9ff);
+        color: #333;
+    }
+
+    .hero-content h2 {
+        font-size: 2.8rem;
+        margin-bottom: 10px;
+    }
+
+    .hero-content span {
+        color: #a084ca;
+    }
+
+    .hero-content p {
+        font-size: 1.1rem;
+        margin-bottom: 25px;
+        color: #666;
+    }
+
+    .btn {
+        background: #a084ca;
+        color: white;
+        padding: 10px 24px;
+        border-radius: 30px;
+        text-decoration: none;
+        font-weight: 500;
+        transition: background 0.3s, transform 0.2s;
+    }
+
+    .btn:hover {
+        background: #c3aed6;
+        transform: translateY(-3px);
+    }
+
+    /* About Section */
+    .about {
+        padding: 80px 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #fff;
+    }
+
+    .about-content {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 50px;
+        max-width: 1000px;
+    }
+
+    .profile-img {
+        width: 280px;
+        border-radius: 50%;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .about-text {
+        max-width: 500px;
+    }
+
+    .about-text h2 {
+        color: #a084ca;
+        margin-bottom: 15px;
+        font-weight: 600;
+    }
+
+    .about-text p {
+        color: #555;
+        line-height: 1.8;
+    }
+
+    /* Projects Section */
+    .projects {
+        padding: 80px 60px;
+        text-align: center;
+        background: #f9f8ff;
+    }
+
+    .projects h2 {
+        color: #a084ca;
+        margin-bottom: 40px;
+    }
+
+    .project-grid {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .project-card {
+        background: #fff;
+        border-radius: 15px;
+        overflow: hidden;
+        width: 300px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .project-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .project-card img {
+        width: 100%;
+    }
+
+    .project-card h3 {
+        margin: 15px 0 8px;
+        color: #a084ca;
+    }
+
+    .project-card p {
+        color: #666;
+        padding: 0 15px 20px;
+        font-size: 0.95rem;
+    }
+
+    /* Contact Section */
+    .contact {
+        padding: 100px 40px;
+        text-align: center;
+        background: #a084ca;
+        color: white;
+    }
+
+    .contact h2 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+
+    .contact p {
+        margin-bottom: 25px;
+        font-weight: 300;
+    }
+
+    .contact .btn {
+        background: white;
+        color: #a084ca;
+    }
+
+    .contact .btn:hover {
+        background: #f3e8ff;
+        color: #6c4a9e;
+    }
+
+    /* Footer */
+    footer {
+        text-align: center;
+        padding: 20px;
+        font-size: 0.9rem;
+        background: #fff;
+        color: #666;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+        .about-content {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .navbar {
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .hero-content h2 {
+            font-size: 2rem;
+        }
+    }
+</style>
 
 <body>
-    <!-- Header / Hero -->
-    <header class="hero">
-        <div class="container">
-            <h1>Hello, I'm <span>Shreyaa</span></h1>
-            <p>Frontend Developer | UI Designer | Creative Thinker</p>
-            <a href="#projects" class="btn">View My Work</a>
-        </div>
+
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">Shreyaa</h1>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Hi, I'm <span>Shreyaa</span></h2>
+            <p>I design and build beautiful, modern websites with functional web experiences.</p>
+            <a href="#projects" class="btn">Explore My Work</a>
+        </div>
+    </section>
 
     <!-- About Section -->
     <section id="about" class="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>
-                I’m a creative frontend developer with a passion for building beautiful, functional, and accessible
-                websites. I specialize in HTML, CSS, JavaScript, and responsive design.
-            </p>
+        <div class="about-content">
+            <img src="https://via.placeholder.com/300" alt=" portrait" class="profile-img">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>
+                    I’m a front-end developer passionate about crafting visually balanced and
+                    responsive websites. My designs blend creativity with simplicity, making digital
+                    experiences
+                </p>
+            </div>
         </div>
     </section>
 
     <!-- Projects Section -->
     <section id="projects" class="projects">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="grid">
-                <div class="card">
-                    <h3>Project One</h3>
-                    <p>A brief description of this awesome project. Built with HTML, CSS & JS.</p>
-                    <a href="#">View Project</a>
-                </div>
-                <div class="card">
-                    <h3>Project Two</h3>
-                    <p>This is another fantastic project that solves real-world problems.</p>
-                    <a href="#">View Project</a>
-                </div>
-                <div class="card">
-                    <h3>Project Three</h3>
-                    <p>An innovative solution made with modern web technologies.</p>
-                    <a href="#">View Project</a>
-                </div>
+        <h2>Selected Work</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <img src="https://img.freepik.com/free-vector/illustration-web-design_53876-5835.jpg?semt=ais_hybrid&w=740&q=80"
+                    alt="Project 1">
+                <h3>Calm UI</h3>
+                <p>A soothing interface with pastel gradients and minimal shapes.</p>
+            </div>
+            <div class="project-card">
+                <img src="https://static.vecteezy.com/system/resources/previews/019/044/840/non_2x/css-letter-logo-design-in-illustration-logo-calligraphy-designs-for-logo-poster-invitation-etc-vector.jpg"
+                    alt="Project 2">
+                <h3>FlexFlow</h3>
+                <p>A responsive flexbox layout built to fill every pixel perfectly.</p>
+            </div>
+            <div class="project-card">
+                <img src="https://img.icons8.com/win10/1200/node-js.jpg" alt="Project 3">
+                <h3>Harmony</h3>
+                <p>An elegant portfolio template focused on symmetry and motion.</p>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <p>Want to work together or have a question? Let's talk.</p>
-            <a href="mailto:your.email@example.com" class="btn">Email Me</a>
-        </div>
+        <h2>Let’s Connect</h2>
+        <p>Have a project or just want to say hi? Reach out to me below!</p>
+        <a href="mailto:your@email.com" class="btn">Say Hello</a>
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
-        <p>&copy; 2025 Your Name. All rights reserved.</p>
+    <footer>
+        <p>© 2025 shreyaa — Crafted with ❤️ and calm vibes.</p>
     </footer>
+
 </body>
 
 </html>
