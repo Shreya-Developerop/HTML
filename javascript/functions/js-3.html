@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="display"></p>
+    <p id="display-2"></p>
+    <button onclick="getMoney">Add Amount</button>
+  
+    <script>
+        let name = "ABC"
+        console.log("original name" + name)
+        name = "XYZ"
+        console.log("updated name" + name)
+
+        var movieName = ""
+        function india() {
+            movieName = " ABCD"
+            console.log(movieName)
+        }
+        function USA() {
+            let name = " spider man"
+        }
+        india()
+        USA()
+
+
+        let input = prompt("Enter Your Name")
+        alert(input)
+
+        let amount = 10000
+        document.getElementById("display").innerHTML = amount
+        let account = 0
+        function getMoney(){
+            let account = prompt("Enter your amount")
+            amount = amount - Number(account)
+            document.getElementById("display-2").innerHTML = amount
+        }
+        
+
+        account = amount + Number(account)
+        alert("Your balance is" + amount)
+    </script>
+</body>
+
+</html>
