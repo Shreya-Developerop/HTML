@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Javascript Fan Cheacker
+    </title>
+    <style>
+        body {
+            height: 100vh;
+            width: 100vw;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+
+        }
+
+        .container {
+            height: 20%;
+            width: 40%;
+            box-shadow: 5px 5px 50px 2px lightblue;
+            border-radius: 20px;
+
+        }
+        p{
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>
+            Javascript fan Cheacker
+        </h2>
+        <p id="display"></p>
+    </div>
+   
+  
+   
+</body>
+<script>
+    let  answer =confirm("Are You a javascript Fan")
+    document.getElementById("display").innerHTML = answer;
+
+</script>
+</html>
