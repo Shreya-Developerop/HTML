@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h2>Sum Calculator</h2>
+
+   <h3>First number</h3>
+   <input type="number" id="input-1">
+   <h3>Second Number</h3>
+   <input type="number" id="input-2">
+   <button onclick="sum()">
+    Calculate Sum 
+   </button>
+</body>
+<script>
+    function sum (){
+   let a = document.getElementById("input-1").value
+   let b = document.getElementById("input-2").value
+   let c = Number(a)+ Number(b)
+    }
+</script>
+</html>
