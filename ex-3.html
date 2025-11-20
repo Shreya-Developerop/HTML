@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p> </p>
+    <input type="number" id="input">
+    <input type="number" id="input-1">
+    <input type="number" id="input-2">
+    <button onclick="showOutput()"> click</button>
+    <script>
+        function showOutput() {
+            let a = Number(document.getElementById("input").value);
+            let b = Number(document.getElementById("input-1").value);
+            let c = Number(document.getElementById("input-2").value);
+            
+            let temp = a;
+            a = b;
+            b = c;
+            c = temp;
+
+
+            document.getElementById("input").value = a;
+            document.getElementById("input-1").value = b;
+            document.getElementById("input-2").value = c;
+        }
+    </script>
+</body>
+
+</html>
