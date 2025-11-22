@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button></button>
+    <button onclick="decrementOne()"> Decrement</button>
+    <button onclick="incrementOne()"> Increment</button>
+    <p id="display"></p>
+
+    <script>
+       count = 1000;
+        function incrementOne(){
+            count--;
+           document.getElementById("display").innerHTML = count;
+        }
+        count = 0;
+        function decrementOne(){
+            count++;
+           document.getElementById("display").innerHTML = count;
+        }
+
+    </script>
+</body>
+</html>
