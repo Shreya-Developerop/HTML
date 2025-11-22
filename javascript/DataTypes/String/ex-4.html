@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2> Favourite Programming Language</h2>
+    <p > your favourite language is: <b id="display"> javascript</b></p>
+    <button onclick="showDisplay()">   click</button>
+  
+  
+</body>
+<script>
+    function showDisplay() {
+        let input = prompt(" what is your favourite language?")
+        document.getElementById("display").innerHTML = input;
+    }
+</script>
+
+</html>

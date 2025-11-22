@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3> current Balance</h3>
+    <h3 id="display"> </h3>
+    <input type="number" id="input" placeholder="">
+    <button onclick="myFunction()"> Add</button>
+    <button onclick="myFunction2()">  Subtract </button>
+    <script>
+        let b = 1000
+        document.getElementById("display").innerHTML = b;
+        function myFunction() {
+            let a = document.getElementById("input").value;
+
+            b = b + Number(a)
+            document.getElementById("display").innerHTML = b;
+        }
+
+
+           let balance = 1000;
+          document.getElementById(" display").innerHTML = b; 
+        function myFunction2() {
+            
+       let amount = document.getElementById("input").value;
+       b = b - Number( amount)
+       document.getElementById("display").innerHTML = b ; 
+        }
+    </script>
+</body>
+
+</html>
